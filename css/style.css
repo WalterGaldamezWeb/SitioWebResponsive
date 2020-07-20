@@ -1,6 +1,45 @@
+.cabecera{
+    background-color:rgb(8, 130, 245);
+    color: white;
+    text-align: center;
+}
 .producto{
-    margin-top: 20px;
+    margin: 10px 21px 10px 10px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;      
+}
+.sub-contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;      
+}
+.btn-ancho{
+    width: 100%;
 }
 footer{
     margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(8, 130, 245);
+    text-align: center;
+}
+.contacto{
+    padding: 15px;
+}
+.telefono{
+    color: white;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: black;
+}
+
+address{
+    color: white;
 }
