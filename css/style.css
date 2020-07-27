@@ -2,6 +2,8 @@
     background-color:rgb(8, 130, 245);
     color: white;
     text-align: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
 }
 .producto{
     margin: 10px 21px 10px 10px;
@@ -27,8 +29,8 @@ footer{
     background-color: rgb(8, 130, 245);
     text-align: center;
 }
-.contacto{
-    padding: 15px;
+.contacto a{
+    text-decoration: none;
 }
 .telefono{
     color: white;
@@ -42,4 +44,19 @@ a:hover{
 
 address{
     color: white;
+}
+textarea{
+    min-height: 150px;
+    max-height: 250px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: rgb(8, 130, 245);
+}
+.breadcrumb a:hover{
+    text-decoration: none;
+    color:black;
+}
+i{
+    margin-right: 10px;
 }
