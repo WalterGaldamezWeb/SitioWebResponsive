@@ -52,9 +52,113 @@
           </div>
     <div class="container">
 
+      <div class="row justify-content-end">
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#inicioSesion">
+        Ingresar
+      </button>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#registro">
+        Registrarse
+      </button>
+
+      </div>
 
 
-        <div class="accordion" id="accordionExample">
+
+      
+
+      <!-- Modal -->
+      <div class="modal fade" id="inicioSesion" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Inicio de Sesión</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="p-4">
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail2">Correo Electronico</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@ejemplo.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword2">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="***********">
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                      Recordar Cuenta
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+      <!-- Modal -->
+      <div class="modal fade" id="registro" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Registrar Usuario</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="p-4">
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail2">Nombre de Usuario</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@ejemplo.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail2">Correo Electronico</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@ejemplo.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword2">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="***********">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword2">Confirmar Contraseña</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="***********">
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarme</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+        <div class="accordion mt-4" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
