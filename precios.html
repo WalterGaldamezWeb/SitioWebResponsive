@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -41,68 +42,108 @@
               <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
           </nav>
-          <div>
-            <div>
-              <h3 class="text-center">Tabla de Precios y Caracteristicas.</h3><br>          
+
+
+
+          
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" style="color: black;" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Precios</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" style="color: black;" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Formas de Pago</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" style="color: black;" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div>
+                <div>
+                  <h3 class="text-center">Tabla de Precios y Caracteristicas.</h3><br>          
+                </div>
+              </div>
+              <table class="table table-responsive">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Versión de Android</th>
+                    <th scope="col">Funcionalidades</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><i class="fas fa-mobile-alt"></i>Sansumg</th>
+                    <td>A-80</td>
+                    <td>$190.00</td>
+                    <td>Azul Metalico</td>
+                    <td><i class="fab fa-android"></i>Android 10.1</td>
+                    <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.</td>   
+                  </tr>
+                  <tr>
+                    <th scope="row"><i class="fas fa-mobile-alt"></i>Huawei</th>
+                    <td>P-30</td>
+                    <td>$250.00</td>
+                    <td>Dorado</td>
+                    <td><i class="fab fa-android"></i>Android 11</td>
+                    <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.</td>    
+                  </tr>
+                  <tr>
+                    <th scope="row"><i class="fas fa-mobile-alt"></i>Alcatel</th>
+                    <td>F 758</td>
+                    <td>$150.00</td>
+                    <td>Negro Mate</td>
+                    <td><i class="fab fa-android"></i>Android 8</td>
+                    <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.</td> 
+                  </tr>
+                  <tr>
+                    <th scope="row"><i class="fas fa-mobile-alt"></i>Motorola</th>
+                    <td>Moto G</td>
+                    <td>$180.89</td>
+                    <td>Rosado</td>
+                    <td><i class="fab fa-android"></i>Android 10</td>
+                    <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.</td>   
+                  </tr>
+                  <tr>
+                    <th scope="row"><i class="fas fa-mobile-alt"></i>LG</th>
+                    <td>K 95</td>
+                    <td>$225.00</td>
+                    <td>Gris</td>
+                    <td><i class="fab fa-android"></i>Android 6</td>
+                    <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.</td>       
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Formas de Pago
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Paypal</li>
+                    <li class="list-group-item">Visa</li>
+                    <li class="list-group-item">Master Card</li>
+                    <li class="list-group-item">American Express</li>
+                  </ul>
+                </div>
+
+              </div>
+              
             </div>
           </div>
-          <table class="table table-responsive">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Marca</th>
-                <th scope="col">Modelo</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Color</th>
-                <th scope="col">Versión de Android</th>
-                <th scope="col">Funcionalidades</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><i class="fas fa-mobile-alt"></i>Sansumg</th>
-                <td>A-80</td>
-                <td>$ 190.00</td>
-                <td>Azul Metalico</td>
-                <td><i class="fab fa-android"></i>Android 10.1</td>
-                <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.B,</td>   
-              </tr>
-              <tr>
-                <th scope="row"><i class="fas fa-mobile-alt"></i>Huawei</th>
-                <td>P-30</td>
-                <td>$ 250.00</td>
-                <td>Dorado</td>
-                <td><i class="fab fa-android"></i>Android 11</td>
-                <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.B,</td>    
-              </tr>
-              <tr>
-                <th scope="row"><i class="fas fa-mobile-alt"></i>Alcatel</th>
-                <td>F 758</td>
-                <td>$ 150.00</td>
-                <td>Negro Mate</td>
-                <td><i class="fab fa-android"></i>Android 8</td>
-                <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.B,</td> 
-              </tr>
-              <tr>
-                <th scope="row"><i class="fas fa-mobile-alt"></i>Motorola</th>
-                <td>Moto G</td>
-                <td>$ 180.89</td>
-                <td>Rosado</td>
-                <td><i class="fab fa-android"></i>Android 10</td>
-                <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.B,</td>   
-              </tr>
-              <tr>
-                <th scope="row"><i class="fas fa-mobile-alt"></i>LG</th>
-                <td>K 95</td>
-                <td>$ 225.00</td>
-                <td>Gris</td>
-                <td><i class="fab fa-android"></i>Android 6</td>
-                <td>Camara Trasera, Camara Frontal, Bluetooth, Memoria Expandible hasta 64G, Sensor se Aproximidad.B,</td>       
-              </tr>
-            </tbody>
-          </table>
-          
-          
-    </div>
+
+
+
+                 
+    </div> 
     <footer>
         <div class="row">
             <div class="col-sm-4 contacto">
@@ -118,9 +159,11 @@
                 <p class="telefono">Correo: info@phonestore.com</p>
             </div>
         </div>
-    </footer>
+    </footer>   
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>    
+<script src="node_modules/popper.js/dist/popper.min.js"></script>
+   
+
 </body>
 </html>
