@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -42,21 +41,12 @@
               <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
           </nav>
-
-
-
-          
-
-
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="pills-home-tab" style="color: black;" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Precios</a>
+              <a class="nav-link active btn-outline-dark m-1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Precios</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-profile-tab" style="color: black;" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Formas de Pago</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-contact-tab" style="color: black;" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+              <a class="nav-link btn-outline-dark m-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Formas de Pago</a>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
@@ -122,48 +112,50 @@
               </table>
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <div class="row justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <div class="card-header">
-                    Formas de Pago
+                <p class="d-flex justify-content-center">
+                  <a class="btn btn-outline-primary m-1" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-credit-card"></i>Formas de Pago</a>
+                  <button class="btn btn-outline-primary m-1" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><i class="fab fa-cc-paypal"></i>Otras Formas de Pago</button>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body">
+                        Aceptamos Targetas de credito y debito Visa, Master Card, American Express.
+                      </div>
+                    </div>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Paypal</li>
-                    <li class="list-group-item">Visa</li>
-                    <li class="list-group-item">Master Card</li>
-                    <li class="list-group-item">American Express</li>
-                  </ul>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                        Otras formas de pago disponibles son Paypal, 2CheckOut, Stripe.
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-              </div>
-              
-            </div>
+            </div>              
           </div>
-
-
-
-                 
-    </div> 
-    <footer>
-        <div class="row">
-            <div class="col-sm-4 contacto">
-                <a href="#"><span class="oi" data-glyph="person"></span>Facebook</a><br>
-                <a href="#"><span class="oi" data-glyph="person"></span>Twitwer</a><br>
-                <a href="#"><span class="oi" data-glyph="person"></span>Youtube</a><br>
-            </div>
-            <div class="col-sm-4 contacto">
-                <address>San Salvador, El Salvador</address>
-            </div>
-            <div class="col-sm-4 contacto">
-                <p class="telefono">Telefono: +503-9966-3399</p>
-                <p class="telefono">Correo: info@phonestore.com</p>
-            </div>
-        </div>
-    </footer>   
+        </div>         
+    </div>
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
-   
-
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/funciones.js"></script>   
 </body>
+<footer>
+  <div class="row">
+      <div class="col-sm-4 contacto">
+          <a href="#"><span class="oi" data-glyph="person"></span>Facebook</a><br>
+          <a href="#"><span class="oi" data-glyph="person"></span>Twitwer</a><br>
+          <a href="#"><span class="oi" data-glyph="person"></span>Youtube</a><br>
+      </div>
+      <div class="col-sm-4 contacto">
+          <address>San Salvador, El Salvador</address>
+      </div>
+      <div class="col-sm-4 contacto">
+          <p class="telefono">Telefono: +503-9966-3399</p>
+          <p class="telefono">Correo: info@phonestore.com</p>
+      </div>
+  </div>
+</footer>
 </html>
