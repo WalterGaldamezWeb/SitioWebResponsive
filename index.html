@@ -51,7 +51,6 @@
             </a>
           </div>
     <div class="container">
-
       <div class="row justify-content-end">
         <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#inicioSesion">
@@ -61,13 +60,7 @@
       <button type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#registro">
         Registrarse
       </button>
-
       </div>
-
-
-
-      
-
       <!-- Modal -->
       <div class="modal fade" id="inicioSesion" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -103,11 +96,6 @@
           </div>
         </div>
       </div>
-
-
-
-      
-
       <!-- Modal -->
       <div class="modal fade" id="registro" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -143,21 +131,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
         <div class="accordion mt-4" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -167,7 +140,6 @@
                   </button>
                 </h2>
               </div>
-          
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                     Tenemos los mejores SmartPhone del mercado.
@@ -210,14 +182,13 @@
             </ol>
           </nav>
         <div class="row contenedor">
-            
             <div class="producto">
                 <div class="card" style="width: 18rem;">
                     <img src="assets/img/1.jpg" class="card-img-top" alt="">
                     <div class="card-body sub-contenedor">
                         <h5 class="card-title"><strong>Samsung</strong></h5>
                         <p class="card-text">SmartPhone con lo ultimo en tecnologia, pantalla Full HD, Android 10.</p>
-                        <a href="#" class="btn btn-primary btn-ancho"><i class="fas fa-shopping-cart"></i>Comprar</a>
+                        <a href="#" class="btn btn-primary btn-ancho" data-toggle="tooltip" data-placement="left" title="-10% Descuento"><i class="fas fa-shopping-cart"></i>Comprar</a>
                     </div>
                 </div>
             </div>
@@ -227,7 +198,7 @@
                     <div class="card-body sub-contenedor">
                         <h5 class="card-title"><strong>Sony</strong></h5>
                         <p class="card-text">SmartPhone con lo ultimo en tecnologia, pantalla Full HD, Android 10.</p>
-                        <a href="#" class="btn btn-primary btn-ancho"><i class="fas fa-shopping-cart"></i>Comprar</a>
+                        <a href="#" class="btn btn-primary btn-ancho" data-toggle="tooltip" data-placement="left" title="-10% Descuento"><i class="fas fa-shopping-cart"></i>Comprar</a>
                     </div>
                 </div>
             </div>
@@ -237,7 +208,7 @@
                     <div class="card-body sub-contenedor">
                         <h5 class="card-title"><strong>Huawei</strong></h5>
                         <p class="card-text">SmartPhone con lo ultimo en tecnologia, pantalla Full HD, Android 10.</p>
-                        <a href="#" class="btn btn-primary btn-ancho"><i class="fas fa-shopping-cart"></i>Comprar</a>
+                        <a href="#" class="btn btn-primary btn-ancho" data-toggle="tooltip" data-placement="left" title="-10% Descuento"><i class="fas fa-shopping-cart"></i>Comprar</a>
                     </div>
                 </div>
             </div>
@@ -293,24 +264,26 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="row">
-            <div class="col-sm-4 contacto">
-                <a href="#"><i class="fab fa-facebook"></i>Facebook</a><br>
-                <a href="#"><i class="fab fa-twitter"></i>Twitwer</a><br>
-                <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
-            </div>
-            <div class="col-sm-4 contacto">
-                <address>San Salvador, El Salvador</address>
-            </div>
-            <div class="col-sm-4 contacto">
-                <p class="telefono">Telefono: +503-9966-3399</p>
-                <p class="telefono">Correo: info@phonestore.com</p>
-            </div>
-        </div>
-    </footer>
-<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>    
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/funciones.js"></script>    
 </body>
+<footer>
+  <div class="row">
+      <div class="col-sm-4 contacto">
+          <a href="#"><i class="fab fa-facebook"></i>Facebook</a><br>
+          <a href="#"><i class="fab fa-twitter"></i>Twitwer</a><br>
+          <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+      </div>
+      <div class="col-sm-4 contacto">
+          <address>San Salvador, El Salvador</address>
+      </div>
+      <div class="col-sm-4 contacto">
+          <p class="telefono">Telefono: +503-9966-3399</p>
+          <p class="telefono">Correo: info@phonestore.com</p>
+      </div>
+  </div>
+</footer>
 </html>
