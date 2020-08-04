@@ -2,15 +2,21 @@
 Sitio web responsive utilizando Bootstrap y Flexbox
 
 1. Navbar
-2. Banner Slider
+2. Carousel
 3. Breadcrumb
 4. Card
 5. iconos usados open-iconic y fontaweson
 6. Tabla-responsive
 7. Formulario
 8. Estilos independientes de bootstrap
-9. Completamente responcive
+9. Completamente responsive
 10. server utilizado lite-server
+11. Accordion
+12. Tabs , Phills
+13. Collapse Multi-Collapse
+14. Tooltips
+15. Modal
+16. JavaScript para control del carousel, tooltips y popovers.
 
 ### Para usar clona el proyecto y ejecuta el comando
 
@@ -37,3 +43,8 @@ para que se instalen todas los modulos necesarios.
 ![captura11](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/11.png)
 ![captura12](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/12.png)
 ![captura13](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/13.png)
+![captura14](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/14.png)
+![captura15](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/15.png)
+![captura16](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/16.png)
+![captura17](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/17.png)
+![captura18](https://github.com/WalterGaldamezWeb/SitioWebResponsive/blob/master/capturas_de_pantalla/18.png)
