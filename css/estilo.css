@@ -1,0 +1,60 @@
+.cabecera {
+  background-color: #0882f5;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 55px; }
+
+.producto {
+  margin: 10px 21px 10px 10px; }
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.sub-contenedor {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-between; }
+
+.btn-ancho {
+  width: 100%; }
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #0882f5;
+  text-align: center; }
+
+.contacto a {
+  text-decoration: none; }
+
+.telefono {
+  color: #ffffff; }
+
+a {
+  color: #ffffff; }
+
+a:hover {
+  color: #000000; }
+
+address {
+  color: #ffffff; }
+
+textarea {
+  min-height: 150px;
+  max-height: 250px; }
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0882f5; }
+
+.breadcrumb a:hover {
+  text-decoration: none;
+  color: #000000; }
+
+i {
+  margin-right: 10px; }

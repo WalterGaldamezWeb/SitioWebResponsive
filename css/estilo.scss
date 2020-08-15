@@ -1,0 +1,69 @@
+$blanco: #ffffff;
+$negro: #000000;
+
+@mixin margenes ( $top, $bottom ) {
+    margin-top: $top;
+    margin-bottom: $bottom;    
+}
+
+.cabecera{
+    background-color:rgb(8, 130, 245);
+    color: $blanco;
+    text-align: center;
+    @include margenes(55px,55px );
+}
+.producto{
+    margin: 10px 21px 10px 10px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;      
+}
+.sub-contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;      
+}
+.btn-ancho{
+    width: 100%;
+}
+footer{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(8, 130, 245);
+    text-align: center;
+}
+.contacto a{
+    text-decoration: none;
+}
+.telefono{
+    color: $blanco;
+}
+a{
+    color: $blanco;
+}
+a:hover{
+    color: $negro;
+}
+
+address{
+    color: $blanco;
+}
+textarea{
+    min-height: 150px;
+    max-height: 250px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: rgb(8, 130, 245);
+}
+.breadcrumb a:hover{
+    text-decoration: none;
+    color: $negro;
+}
+i{
+    margin-right: 10px;
+}
