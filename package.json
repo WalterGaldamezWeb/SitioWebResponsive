@@ -8,7 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "start": "concurrently \"npm run watch:scss\" \"npm run dev\""
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
+    "clean": "rimraf distri",
+    "imagemin": "imagemin assets/img/* --out-dir distri/assets/img",
+    "usemin": "usemin index.html -d distri --htmlmin -o distri/index.html && usemin precios.html -d distri --htmlmin -o distri/precios.html && usemin contacto.html -d distri --htmlmin -o distri/contacto.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -21,10 +25,15 @@
   },
   "homepage": "https://github.com/WalterGaldamezWeb/SitioWebResponsive#readme",
   "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
