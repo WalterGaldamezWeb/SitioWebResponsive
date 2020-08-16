@@ -10,7 +10,7 @@ module.exports = function (grunt) {
               expand: true,
               cwd: 'css',
               src: ['*.scss'],
-              dest: '../css',
+              dest: 'distri/css',
               ext: '.css'
             }]
           }
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
                         expand:true,
                         cwd: './',
                         src: 'assets/img/*.{png,gif,jpg,jpge}',
-                        dest: 'dist/'
+                        dest: 'distri/'
                     }
                 ]
             }
