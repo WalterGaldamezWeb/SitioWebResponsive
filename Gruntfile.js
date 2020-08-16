@@ -10,7 +10,7 @@ module.exports = function (grunt) {
               expand: true,
               cwd: 'css',
               src: ['*.scss'],
-              dest: 'distri/css',
+              dest: 'css',
               ext: '.css'
             }]
           }
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
                         expand:true,
                         cwd: './',
                         src: 'assets/img/*.{png,gif,jpg,jpge}',
-                        dest: 'distri/'
+                        dest: 'dist/'
                     }
                 ]
             }
@@ -56,13 +56,13 @@ module.exports = function (grunt) {
                     dot: true,
                     cwd: './',
                     src:['*.html'],
-                    dest: 'distri'
+                    dest: 'dist'
                 }]
             }
         },
         clean:{
             build:{
-                src:['distri']
+                src:['dist/']
             }
         },
         cssmin:{
@@ -79,7 +79,10 @@ module.exports = function (grunt) {
             },
             release:{
                 files:[{
-                    src:['distri/js/*.js','distri/css/*.css']
+                    src:[
+                        'dist/js/*.js',
+                        'dist/css/*.css'
+                    ]
                 }]
             }
         },
@@ -91,7 +94,7 @@ module.exports = function (grunt) {
         },
         useminPrepare:{
             foo:{
-                dest:'distri',
+                dest:'dist',
                 src:['index.html','precios.html','contacto.html']
             },
             options:{
@@ -117,15 +120,15 @@ module.exports = function (grunt) {
         },
         usemin:{
             html:[
-                'distri/index.html',
-                'distri/precios.html',
-                'distri/contacto.html'
+                'dist/index.html',
+                'dist/precios.html',
+                'dist/contacto.html'
             ],
             options:{
                 assetsDir:[
-                    'distri',
-                    'distri/css',
-                    'distri/js'
+                    'dist',
+                    'dist/css',
+                    'dist/js'
                 ]
             }
         }
@@ -133,7 +136,7 @@ module.exports = function (grunt) {
       /* grunt.loadNpmTasks('grunt-contrib-watch');
       grunt.loadNpmTasks('grunt-contrib-sass');
       grunt.loadNpmTasks('grunt-browser-sync');
-      grunt.loadNpmTasks('grunt-contrib-imagemin'); */  
+      grunt.loadNpmTasks('grunt-contrib-imagemin'); */ 
       grunt.registerTask('css', ['sass']);
       grunt.registerTask('default', ['browserSync','watch']);
       grunt.registerTask('imagemin:compress', ['imagemin']);
@@ -141,7 +144,9 @@ module.exports = function (grunt) {
           'clean',
           'copy',
           'imagemin',
+          'useminPrepare',
           'concat',
+          'cssmin',
           'uglify',
           'filerev',
           'usemin'
