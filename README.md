@@ -1,5 +1,5 @@
-## Aplicación Android Basica
-Sitio web responsive utilizando Bootstrap y Flexbox
+## Sitio Reb Responsive
+Utilizando Bootstrap y Flexbox, Grunt y diferente herramientas, node_js, sass,
 
 1. Navbar
 2. Carousel
